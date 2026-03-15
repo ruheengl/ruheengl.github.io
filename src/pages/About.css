@@ -5,7 +5,7 @@
 
 .about { max-width:1060px; margin:0 auto; padding:0 60px; }
 .about-hero { padding-top:118px; margin-bottom:52px; }
-.about-eyebrow { font-family:'Kalam',cursive; font-size:12px; letter-spacing:.1em; text-transform:uppercase; color:#7a6e5f; display:flex; align-items:center; gap:10px; margin-bottom:14px; }
+.about-eyebrow { font-family:'Kalam',cursive; font-size:16px; letter-spacing:.1em; text-transform:uppercase; color:#7a6e5f; display:flex; align-items:center; gap:10px; margin-bottom:14px; }
 .about-eyebrow::before { content:''; width:28px; height:1px; background:#1a1510; }
 .about-hero h1 { font-family:'Caveat',cursive; font-size:clamp(44px,6.5vw,80px); line-height:.93; letter-spacing:-.02em; color:#1a1510; }
 .about-hero h1 em { font-style:normal; border-bottom:2.5px solid #1a1510; }
@@ -26,16 +26,16 @@
 .about-aside { display:flex; flex-direction:column; gap:18px; }
 .info-sticky { background:rgba(26,21,16,.07); padding:18px 20px; border-radius:2px; border:1px solid rgba(26,21,16,.15); transform:rotate(-1.8deg); box-shadow:2px 3px 10px rgba(0,0,0,.07); }
 .quote-sticky { transform:rotate(1.5deg); }
-.sticky-head { font-family:'Kalam',cursive; font-size:10px; letter-spacing:.12em; text-transform:uppercase; color:#7a6e5f; margin-bottom:10px; }
-.info-list { font-family:'Caveat',cursive; font-size:17px; line-height:1.7; color:#3d3328; padding-left:14px; }
-.info-sticky p { font-family:'Caveat',cursive; font-size:16px; line-height:1.55; color:#3d3328; }
+.sticky-head { font-family:'Kalam',cursive; font-size:16px; letter-spacing:.12em; text-transform:uppercase; color:#7a6e5f; margin-bottom:10px; }
+.info-list { font-family:'Caveat',cursive; font-size:20px; line-height:1.7; color:#3d3328; padding-left:14px; }
+.info-sticky p { font-family:'Caveat',cursive; font-size:20px; line-height:1.55; color:#3d3328; }
 .aside-doodle { width:110px; margin-left:12px; opacity:.6; }
 
 .skills-section { border-top:1px dashed rgba(26,21,16,.15); padding-top:52px; }
 .skills-title { font-family:'Caveat',cursive; font-size:36px; color:#1a1510; margin-bottom:28px; position:relative; display:inline-block; }
 .skills-title::after { content:''; display:block; height:2px; background:#1a1510; margin-top:3px; transform:rotate(-.3deg); }
 .skills-scatter { display:flex; flex-wrap:wrap; gap:12px; }
-.skill-chip { font-family:'Kalam',cursive; font-size:14px; padding:6px 18px; border:1.5px solid rgba(26,21,16,.25); border-radius:99px; color:#7a6e5f; transform:rotate(var(--r,0deg)); transition:background .2s,border-color .2s,color .2s,transform .2s; cursor:default; }
+.skill-chip { font-family:'Kalam',cursive; font-size:16px; padding:6px 18px; border:1.5px solid rgba(26,21,16,.25); border-radius:99px; color:#7a6e5f; transform:rotate(var(--r,0deg)); transition:background .2s,border-color .2s,color .2s,transform .2s; cursor:default; }
 .skill-chip:hover { background:#1a1510; color:#f5f0e8; border-color:#1a1510; transform:rotate(0deg) scale(1.03); }
 .skill-accent { border-color:#3d3328; color:#3d3328; }
 .skill-accent:hover { background:#3d3328; border-color:#3d3328; }

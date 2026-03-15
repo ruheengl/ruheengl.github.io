@@ -34,7 +34,7 @@ export default function Home() {
       {/* ── HERO ── */}
       <section className="hero">
         <div className="hero-left">
-          <p className="hero-eyebrow reveal">AR / VR Developer & Researcher</p>
+          {/* <p className="hero-eyebrow reveal"></p> */}
           <h1 className="reveal" style={{ transitionDelay: '.07s' }}>
             Hi, I'm<br /><em>Ruhee</em>
           </h1>
@@ -42,7 +42,7 @@ export default function Home() {
             I build things that <strong>don't live on flat screens</strong>.
           </p>
           <div className="hero-tags reveal" style={{ transitionDelay: '.2s' }}>
-            {['AR / VR', 'Unity', 'Research', 'Unreal', 'Visualization'].map((t, i) => (
+            {['Software', 'AR / VR', 'Human-Computer Interaction'].map((t, i) => (
               <span key={t} className="hero-tag" style={{ '--r': `${[-1.5,.8,-.5,1.2,-.3][i]}deg` }}>{t}</span>
             ))}
           </div>
@@ -60,108 +60,8 @@ export default function Home() {
           <span className="ann ann-3">Unity + XReal</span> */}
         {/* </div> */}
         <div className="hero-right reveal" style={{ transitionDelay: '.18s' }}>
-          <svg viewBox="0 0 340 260" xmlns="http://www.w3.org/2000/svg" fill="none" className="hero-svg">
-
-            {/* ── FLOATING UI PANELS — top left, projected ── */}
-            {/* panel top-left */}
-            <rect x="8" y="12" width="78" height="56" rx="3"
-              stroke="#1a1510" strokeWidth="1.2" opacity=".45" fill="rgba(26,21,16,0.02)"/>
-            <line x1="16" y1="26" x2="78" y2="26" stroke="#1a1510" strokeWidth=".8" opacity=".3"/>
-            <line x1="16" y1="36" x2="60" y2="36" stroke="#1a1510" strokeWidth=".8" opacity=".25"/>
-            <line x1="16" y1="46" x2="70" y2="46" stroke="#1a1510" strokeWidth=".8" opacity=".2"/>
-            <circle cx="16" cy="56" r="3" fill="rgba(26,21,16,0.25)" opacity=".5"/>
-            <line x1="16" y1="56" x2="26" y2="56" stroke="#1a1510" strokeWidth=".8" opacity=".25"/>
-            {/* dashed connector to glasses left */}
-            <line x1="86" y1="46" x2="108" y2="116"
-              stroke="#1a1510" strokeWidth=".9" opacity=".2" strokeDasharray="3 3"/>
-
-            {/* panel top-right */}
-            <rect x="252" y="8" width="78" height="56" rx="3"
-              stroke="#1a1510" strokeWidth="1.2" opacity=".45" fill="rgba(26,21,16,0.02)"/>
-            <line x1="260" y1="22" x2="322" y2="22" stroke="#1a1510" strokeWidth=".8" opacity=".3"/>
-            <line x1="260" y1="32" x2="304" y2="32" stroke="#1a1510" strokeWidth=".8" opacity=".25"/>
-            <line x1="260" y1="42" x2="314" y2="42" stroke="#1a1510" strokeWidth=".8" opacity=".2"/>
-            {/* small bar chart inside */}
-            <rect x="262" y="50" width="6" height="10" rx="1" fill="rgba(26,21,16,0.2)" opacity=".5"/>
-            <rect x="272" y="44" width="6" height="16" rx="1" fill="rgba(26,21,16,0.2)" opacity=".5"/>
-            <rect x="282" y="48" width="6" height="12" rx="1" fill="rgba(26,21,16,0.2)" opacity=".5"/>
-            {/* dashed connector to glasses right */}
-            <line x1="254" y1="48" x2="232" y2="116"
-              stroke="#1a1510" strokeWidth=".9" opacity=".2" strokeDasharray="3 3"/>
-
-            {/* panel bottom — transcript/text style */}
-            <rect x="100" y="202" width="140" height="46" rx="3"
-              stroke="#1a1510" strokeWidth="1.2" opacity=".4" fill="rgba(26,21,16,0.02)"/>
-            <line x1="110" y1="216" x2="232" y2="216" stroke="#1a1510" strokeWidth=".8" opacity=".3"/>
-            <line x1="110" y1="226" x2="214" y2="226" stroke="#1a1510" strokeWidth=".8" opacity=".25"/>
-            <line x1="110" y1="236" x2="222" y2="236" stroke="#1a1510" strokeWidth=".8" opacity=".2"/>
-            {/* connector up */}
-            <line x1="170" y1="185" x2="170" y2="202"
-              stroke="#1a1510" strokeWidth=".9" opacity=".2" strokeDasharray="2 2"/>
-
-            {/* ── AR GLASSES FRAME ── */}
-            {/* left arm / temple */}
-            <path d="M8 128 Q18 126 38 124 L108 120"
-              stroke="#1a1510" strokeWidth="2.8" strokeLinecap="round"/>
-            {/* right arm / temple */}
-            <path d="M332 128 Q322 126 302 124 L232 120"
-              stroke="#1a1510" strokeWidth="2.8" strokeLinecap="round"/>
-
-            {/* left lens frame — slim, wide */}
-            <rect x="62" y="104" width="96" height="52" rx="10"
-              stroke="#1a1510" strokeWidth="2.4" fill="rgba(26,21,16,0.03)"/>
-
-            {/* right lens frame */}
-            <rect x="182" y="104" width="96" height="52" rx="10"
-              stroke="#1a1510" strokeWidth="2.4" fill="rgba(26,21,16,0.03)"/>
-
-            {/* nose bridge */}
-            <path d="M158 122 Q170 132 182 122"
-              stroke="#1a1510" strokeWidth="2.2" fill="none" strokeLinecap="round"/>
-
-            {/* ── LENS DETAILS — AR tint / scan lines ── */}
-            {[110, 118, 126, 148].map(y => (
-              <line key={`ll${y}`} x1="66" y1={y} x2="154" y2={y}
-                stroke="#1a1510" strokeWidth=".5" opacity=".08"/>
-            ))}
-            {[110, 118, 126, 148].map(y => (
-              <line key={`rl${y}`} x1="186" y1={y} x2="274" y2={y}
-                stroke="#1a1510" strokeWidth=".5" opacity=".08"/>
-            ))}
-
-            {/* AR projection glow marks on lenses */}
-            <rect x="74" y="112" width="40" height="24" rx="3"
-              stroke="#1a1510" strokeWidth=".9" opacity=".2" strokeDasharray="2 2"/>
-            <rect x="192" y="112" width="40" height="24" rx="3"
-              stroke="#1a1510" strokeWidth=".9" opacity=".2" strokeDasharray="2 2"/>
-
-            {/* ── TECHNICAL CORNER BRACKETS ── */}
-            <path d="M70 110 L62 110 L62 118" stroke="#1a1510" strokeWidth="1.2" opacity=".35"/>
-            <path d="M150 110 L158 110 L158 118" stroke="#1a1510" strokeWidth="1.2" opacity=".35"/>
-            <path d="M70 150 L62 150 L62 142" stroke="#1a1510" strokeWidth="1.2" opacity=".35"/>
-            <path d="M150 150 L158 150 L158 142" stroke="#1a1510" strokeWidth="1.2" opacity=".35"/>
-            <path d="M190 110 L182 110 L182 118" stroke="#1a1510" strokeWidth="1.2" opacity=".35"/>
-            <path d="M270 110 L278 110 L278 118" stroke="#1a1510" strokeWidth="1.2" opacity=".35"/>
-            <path d="M190 150 L182 150 L182 142" stroke="#1a1510" strokeWidth="1.2" opacity=".35"/>
-            <path d="M270 150 L278 150 L278 142" stroke="#1a1510" strokeWidth="1.2" opacity=".35"/>
-
-            {/* ── SMALL ANNOTATION LABELS ── */}
-            <text x="170" y="100" textAnchor="middle"
-              fontFamily="Kalam, cursive" fontSize="11" fill="#1a1510" opacity=".35">
-              AR glasses
-            </text>
-            <text x="47" y="186" textAnchor="middle"
-              fontFamily="Kalam, cursive" fontSize="10" fill="#1a1510" opacity=".3"
-              transform="rotate(-15, 47, 186)">
-              spatial UI
-            </text>
-            <text x="290" y="190" textAnchor="middle"
-              fontFamily="Kalam, cursive" fontSize="10" fill="#1a1510" opacity=".3"
-              transform="rotate(12, 290, 190)">
-              real-time
-            </text>
-
-          </svg>
+          <img src={heroSketch} alt="AR/VR sketch" className="hero-svg" />
+          
         </div>
       </section>
 

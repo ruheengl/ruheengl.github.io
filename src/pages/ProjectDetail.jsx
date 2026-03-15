@@ -45,21 +45,30 @@ export default function ProjectDetail() {
         </div>
       </header>
 
-      <section className="detail-demo reveal" style={{ transitionDelay:'.14s' }}>
-        {project.youtubeId ? (
-          <iframe src={`https://www.youtube.com/embed/${project.youtubeId}`} title={project.title}
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen/>
-        ) : (
-          <div className="demo-empty">
-            <svg viewBox="0 0 80 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="4" y="4" width="72" height="48" rx="4" stroke="currentColor" strokeWidth="1.5" strokeDasharray="4 3"/>
-              <path d="M30 38 L30 18 L52 28 Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round"/>
-            </svg>
-            <p>Add your demo by setting <code>youtubeId</code> in <code>src/data/projects.js</code></p>
-            <p className="demo-empty" style={{ fontSize:'12px', marginTop:'4px' }}>e.g. <code>youtubeId: 'your-video-id'</code></p>
-          </div>
-        )}
-      </section>
+      {(project.youtubeId || project.image) && (
+        <section className="detail-demo reveal" style={{ transitionDelay: '.14s' }}>
+          {project.youtubeId ? (
+            <iframe
+              src={`https://www.youtube.com/embed/${project.youtubeId}`}
+              title={project.title}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          ) : (
+            <img
+              src={project.image}
+              alt={project.title}
+              style={{
+                width: '100%',
+                height: '100%',
+                objectFit: 'contain',
+                background: '#f5f0e8',
+                padding: '16px',
+              }}
+            />
+          )}
+        </section>
+      )}
 
       <div className="detail-body">
         <section className="detail-text reveal">
@@ -82,10 +91,10 @@ export default function ProjectDetail() {
               </div>
             </div>
           )}
-          <div className="detail-sticky">
+          {/* <div className="detail-sticky">
             <div className="sticky-label">My role</div>
             <p>{project.role}</p>
-          </div>
+          </div> */}
         </aside>
       </div>
 

@@ -5,7 +5,7 @@
 
 .contact { max-width:1060px; margin:0 auto; padding:0 60px; }
 .contact-hero { padding-top:118px; margin-bottom:52px; }
-.contact-eyebrow { font-family:'Kalam',cursive; font-size:12px; letter-spacing:.1em; text-transform:uppercase; color:#7a6e5f; display:flex; align-items:center; gap:10px; margin-bottom:14px; }
+.contact-eyebrow { font-family:'Kalam',cursive; font-size:16px; letter-spacing:.1em; text-transform:uppercase; color:#7a6e5f; display:flex; align-items:center; gap:10px; margin-bottom:14px; }
 .contact-eyebrow::before { content:''; width:28px; height:1px; background:#1a1510; }
 .contact-hero h1 { font-family:'Caveat',cursive; font-size:clamp(56px,8vw,100px); line-height:.93; letter-spacing:-.02em; color:#1a1510; }
 .contact-hero h1 em { font-style:normal; border-bottom:3px solid #1a1510; }
@@ -25,8 +25,8 @@
 .contact-aside { display:flex; flex-direction:column; gap:22px; align-items:flex-start; }
 .envelope-svg { width:100%; max-width:260px; filter:drop-shadow(2px 3px 8px rgba(0,0,0,.06)); }
 .contact-sticky { background:rgba(26,21,16,.07); padding:16px 18px; border-radius:2px; border:1px solid rgba(26,21,16,.15); transform:rotate(-1.8deg); box-shadow:2px 3px 10px rgba(0,0,0,.07); max-width:220px; }
-.sticky-label { font-family:'Kalam',cursive; font-size:14px; letter-spacing:.1em; text-transform:uppercase; color:#7a6e5f; margin-bottom:8px; }
-.contact-sticky p { font-family:'Caveat',cursive; font-size:18px; line-height:1.55; color:#3d3328; }
+.sticky-label { font-family:'Kalam',cursive; font-size:16px; letter-spacing:.1em; text-transform:uppercase; color:#7a6e5f; margin-bottom:8px; }
+.contact-sticky p { font-family:'Caveat',cursive; font-size:20px; line-height:1.55; color:#3d3328; }
 .arrow-doodle { width:64px; opacity:.4; margin-left:12px; }
 
 .footer { margin-top: 40px; }

@@ -25,8 +25,7 @@ const SKILLS = [
   { name: 'Git', r: -1.4 },
   { name: 'Linux', r: 1 },
   // Design / Visualization
-  { name: 'Blender', r: -.8 },
-  { name: 'Research Design', r: -.5 },
+  { name: 'Blender', r: -.8 }
 ];
 
 export default function About() {
@@ -68,7 +67,6 @@ export default function About() {
               <li>College Station, TX</li>
               <li>TAMU Visualization (MS)</li>
               <li>AR/VR Research</li>
-              <li>Open to internships 2025</li>
             </ul>
           </div>
           <div className="info-sticky quote-sticky">
