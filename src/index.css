@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Caveat:wght@500;600&display=swap');
+
+:root {
+  --paper: #f5f0e8;
+  --paper-dark: #ede6d3;
+  --ink: #1a1510;
+  --ink-soft: #3d3328;
+  --pencil: #7a6e5f;
+  --rule: rgba(26,21,16,0.09);
+  --margin: rgba(26,21,16,0.15);
+  --panel: #1c1814;
+}
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--paper); color: var(--ink);
+  font-family: 'Kalam', cursive; font-weight: 300;
+  overflow-x: hidden; min-height: 100vh;
+}
+body::before {
+  content: ''; position: fixed; inset: 0;
+  background-image: repeating-linear-gradient(transparent,transparent 31px,var(--rule) 31px,var(--rule) 32px);
+  pointer-events: none; z-index: 0;
+}
+body::after {
+  content: ''; position: fixed; top: 0; bottom: 0; left: 72px;
+  width: 1px; background: var(--margin);
+  pointer-events: none; z-index: 0;
+}
+#root { position: relative; z-index: 1; }
