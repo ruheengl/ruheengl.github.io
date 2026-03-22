@@ -28,11 +28,11 @@ export default function Contact() {
           <div className="contact-links reveal" style={{ transitionDelay:'.13s' }}>
             <a href="mailto:ruhee.nagulwar@gmail.com" className="c-link">
               <span className="c-label">Email</span>
-              <span className="c-value">ruhee.nagulwar@gmail.com <span className="c-arrow">→</span></span>
+              <span className="c-value">ruhee.nagulwar@gmail.com →<span className="c-arrow">→</span></span>
             </a>
             <a href="https://www.behance.net/ruheenagulwar" target="_blank" rel="noreferrer" className="c-link">
               <span className="c-label">Behance</span>
-              <span className="c-value">ruheenagulwar <span className="c-arrow">→</span></span>
+              <span className="c-value">ruheenagulwar →<span className="c-arrow">→</span></span>
             </a>
             <a href="https://linkedin.com/in/ruhee-nagulwar" target="_blank" rel="noreferrer" className="c-link">
               <span className="c-label">LinkedIn</span>
@@ -40,7 +40,7 @@ export default function Contact() {
             </a>
             <a href="https://github.com/ruheengl" target="_blank" rel="noreferrer" className="c-link">
               <span className="c-label">GitHub</span>
-              <span className="c-value">ruheengl <span className="c-arrow">→</span></span>
+              <span className="c-value">ruheengl →<span className="c-arrow"></span></span>
             </a>
           </div>
         </div>

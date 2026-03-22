@@ -45,6 +45,26 @@ As lead programmer, I implemented the entire gameplay system: the full betting a
     ],
   },
   {
+    id: 'oracle-aconex',
+    title: 'Oracle Corporation — Aconex Insights',
+    category: 'Backend Engineering · Oracle',
+    tags: ['Engineering'],
+    year: '2022-2025',
+    stat: '35% faster report generation',
+    short: 'Backend pipeline engineering for enterprise report generation processing multi-gigabyte datasets at Oracle.',
+    cover: null,
+    youtubeId: null,
+    description: `Three years as Associate Software Developer at Oracle, working on the Aconex Insights module — a reporting platform used by large construction and engineering enterprises globally.
+
+Enhanced the backend report generation pipeline implementing complex data aggregation features that processed multi-gigabyte datasets via REST APIs. Optimized legacy aggregation logic that reduced report generation time by 35%.
+
+Resolved critical production issues for high-value enterprise clients — analyzing bug reports and shipping code fixes directly to production. Led research on migration from monolithic to microservices architecture. Integrated internationalization support for 7 languages covering 80% of the global user base. Managed deployment and upgrade processes for 6 testing environments, reducing setup time by 40%.`,
+    role: 'Associate Software Developer',
+    collaborators: 'Oracle Corporation',
+    techs: ['Java', 'Spring', 'REST APIs', 'SQL', 'Docker', 'Microservices', 'Linux'],
+    links: [],
+  },
+  {
     id: 'spacear',
     title: 'SpaceAR',
     category: 'AR Game · Unity',
@@ -200,6 +220,48 @@ By varying scale, layering, colour, and orientation of identical forms, the goal
     ],
   },
   {
+    id: 'flighty',
+    title: 'Flighty',
+    category: 'Full Stack · Flask & MySQL',
+    tags: ['Engineering'],
+    year: '2021',
+    stat: 'Flight Management System with admin panel',
+    short: 'Flask-based flight management web app with user booking, session persistence, and admin flight management.',
+    cover: null,
+    youtubeId: null,
+    description: `Flighty is a full-stack flight management system built with Flask and MySQL. Users can sign up, log in, search for available flights between a source and destination, book tickets, cancel bookings, and print transaction info.
+
+  The app includes a separate admin panel where admins can add and remove flights, airports, and airlines on demand. Role-based access control protects sensitive endpoints — payment, booking, and profile pages all require authentication before access is granted.
+
+  Session data is persisted so users can return and continue where they left off. The database schema uses MySQL with SELECT, INSERT, DELETE, and JOIN queries for relational data across flights, users, and bookings.`,
+    role: 'Solo developer — Flask, MySQL, Python, session management',
+    collaborators: null,
+    techs: ['Python', 'Flask', 'MySQL', 'HTML', 'CSS', 'Session Management'],
+    links: [
+      { label: 'GitHub', href: 'https://github.com/ruheengl/Flighty' },
+    ],
+  },
+  {
+    id: 'connect',
+    title: 'Connect',
+    category: 'Full Stack · MERN',
+    tags: ['Engineering'],
+    year: '2021',
+    stat: 'NGO-donor web platform',
+    short: 'MERN-based web platform connecting NGOs and donors with flexible donation options and social media integration.',
+    cover: null,
+    youtubeId: null,
+    description: `A full-stack web platform built on the MERN stack (MongoDB, Express, React, Node.js) enabling donations, volunteering sign-ups, and social media integration for NGOs and their supporters.
+
+  Designed to streamline the connection between non-profits and donors — providing flexible contribution options, clean UI for browsing causes, and integration hooks for sharing on social platforms.
+
+  Enhanced donor engagement through a well-structured interface and multiple donation pathways, reducing friction in the giving process.`,
+    role: 'Developer — MERN stack, full-stack development',
+    collaborators: null,
+    techs: ['MongoDB', 'Express', 'React', 'Node.js', 'JavaScript'],
+    links: [],
+  },
+  {
     id: 'spark-ar',
     title: 'Spark AR Filters',
     category: 'AR Filters · Facebook School of Innovation',
@@ -222,44 +284,46 @@ One filter — a face filter game created for Zostel India leveraging facial tra
     ],
   },
   {
-    id: 'covid-dashboard',
-    title: 'Public Health Monitoring System',
-    category: 'Full Stack · Python',
+    id: 'email-client',
+    title: 'Custom Email Client',
+    category: 'Systems Programming · Python',
     tags: ['Engineering'],
-    year: '2022',
-    stat: '5 stars · 4 forks on GitHub',
-    short: 'Public health monitoring and surveillance dashboard built in Python during the COVID-19 pandemic.',
+    year: '2020',
+    stat: 'IMAP protocol from scratch',
+    short: 'A fully functional email client built from scratch using Python and socket programming — no email libraries.',
     cover: null,
     youtubeId: null,
-    description: `A public health monitoring and surveillance system built as a collaborative project during the COVID-19 pandemic.
+    description: `A custom email client built using Python and raw socket programming, implementing the IMAP protocol from scratch without relying on any email libraries.
 
-The system aggregates and visualizes public health data to support monitoring and decision-making.`,
-    role: 'Developer',
+  Supports login and authentication, mailbox switching between folders, and full mail handling — reading, listing, and managing messages — entirely through direct socket communication with the mail server.
+
+  The project was an exercise in understanding low-level network protocols and building reliable communication systems from the ground up.`,
+    role: 'Solo developer — Python, socket programming, IMAP',
+    collaborators: null,
+    techs: ['Python', 'Socket Programming', 'IMAP Protocol'],
+    links: [],
+  },
+  {
+    id: 'covidtrack',
+    title: 'CovidTrack',
+    category: 'Full Stack · Python',
+    tags: ['Engineering'],
+    year: '2020',
+    stat: 'Global case dashboard with chatbot',
+    short: 'Interactive Covid-19 dashboard with global case tracking, interactive maps, and an IBM Watson chatbot.',
+    cover: null,
+    youtubeId: null,
+    description: `An interactive Covid-19 dashboard providing real-time case updates across all regions of India and the world, built during the height of the pandemic.
+
+  Created global case tracking visualizations with interactive plots, geographic maps, and region-level breakdowns using Python, Dash, and Bootstrap. Integrated a Flask backend for data serving.
+
+  Added an FAQ chatbot trained on Covid-19 data using IBM Watson that answers user queries about symptoms, guidelines, and case statistics — making the dashboard more than just a data display.`,
+    role: 'Developer — Python, Dash, Flask, IBM Watson',
     collaborators: 'PPL Project team',
-    techs: ['Python', 'Data Visualization', 'REST APIs'],
+    techs: ['Python', 'Dash', 'Flask', 'Bootstrap', 'IBM Watson', 'Mapbox'],
     links: [
       { label: 'GitHub', href: 'https://github.com/PPL-Project-Covid-Dashboard/Public-Health-Monitoring-Survellience-System' },
     ],
-  },
-  {
-    id: 'oracle-aconex',
-    title: 'Oracle Aconex — Insights',
-    category: 'Backend Engineering · Oracle',
-    tags: ['Engineering'],
-    year: '2022-2025',
-    stat: '35% faster report generation',
-    short: 'Backend pipeline engineering for enterprise report generation processing multi-gigabyte datasets at Oracle.',
-    cover: null,
-    youtubeId: null,
-    description: `Three years as Associate Software Developer at Oracle, working on the Aconex Insights module — a reporting platform used by large construction and engineering enterprises globally.
-
-Enhanced the backend report generation pipeline implementing complex data aggregation features that processed multi-gigabyte datasets via REST APIs. Optimized legacy aggregation logic that reduced report generation time by 35%.
-
-Resolved critical production issues for high-value enterprise clients — analyzing bug reports and shipping code fixes directly to production. Led research on migration from monolithic to microservices architecture. Integrated internationalization support for 7 languages covering 80% of the global user base. Managed deployment and upgrade processes for 6 testing environments, reducing setup time by 40%.`,
-    role: 'Associate Software Developer',
-    collaborators: 'Oracle Corporation',
-    techs: ['Java', 'Spring', 'REST APIs', 'SQL', 'Docker', 'Microservices', 'Linux'],
-    links: [],
   },
 ];
 

@@ -1,31 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Caveat:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=Caveat:wght@500;600&display=swap');
 
 :root {
-  --paper: #f5f0e8;
-  --paper-dark: #ede6d3;
-  --ink: #1a1510;
-  --ink-soft: #3d3328;
-  --pencil: #7a6e5f;
-  --rule: rgba(26,21,16,0.09);
-  --margin: rgba(26,21,16,0.15);
-  --panel: #1c1814;
+  --bg: #ffffff;
+  --ink: #111111;
+  --ink-mid: #444444;
+  --ink-dim: #888888;
+  --border: rgba(17,17,17,0.12);
+  --border-strong: rgba(17,17,17,0.25);
+  --panel: #111111;
+  --rule: rgba(17,17,17,0.06);
 }
 
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
+
 body {
-  background: var(--paper); color: var(--ink);
-  font-family: 'Kalam', cursive; font-weight: 300;
-  overflow-x: hidden; min-height: 100vh;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+  overflow-x: hidden;
+  min-height: 100vh;
 }
+
+/* subtle notebook lines — very faint on white */
 body::before {
-  content: ''; position: fixed; inset: 0;
-  background-image: repeating-linear-gradient(transparent,transparent 31px,var(--rule) 31px,var(--rule) 32px);
+  content: '';
+  position: fixed; inset: 0;
+  background-image: repeating-linear-gradient(
+    transparent, transparent 31px,
+    var(--rule) 31px, var(--rule) 32px
+  );
   pointer-events: none; z-index: 0;
 }
+
+/* left margin line */
 body::after {
-  content: ''; position: fixed; top: 0; bottom: 0; left: 72px;
-  width: 1px; background: var(--margin);
+  content: '';
+  position: fixed; top: 0; bottom: 0; left: 72px;
+  width: 1px; background: rgba(17,17,17,0.08);
   pointer-events: none; z-index: 0;
 }
+
 #root { position: relative; z-index: 1; }

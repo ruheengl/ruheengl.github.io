@@ -62,7 +62,7 @@ export default function ProjectDetail() {
                 width: '100%',
                 height: '100%',
                 objectFit: 'contain',
-                background: '#f5f0e8',
+                background: '#ffffff',
                 padding: '16px',
               }}
             />
