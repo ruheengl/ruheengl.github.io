@@ -230,6 +230,19 @@ h1 em { font-style:normal; border-bottom:2.5px solid #111; }
   .section-inner { padding:50px 28px 60px; }
   .about-grid { grid-template-columns:1fr; }
   .about-aside { display:none; }
+  .work-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width:560px) {
+  .hero-inner { padding:0 20px; }
+  .section-inner { padding:40px 20px 50px; }
+  .work-grid { grid-template-columns: 1fr; gap:20px; }
+  .work-card { transform: none !important; }
+  .work-card::after { display: none; }
+  .work-title { font-size:22px; }
+  .work-cat { white-space:normal; overflow:visible; }
+  .hero-btns { flex-direction: column; gap:10px; }
+  .btn { text-align:center; }
 }
 
 /* ── SECTION HEADINGS (Caveat) ── */

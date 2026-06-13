@@ -67,4 +67,16 @@
 
 .footer { margin-top: 80px; }
 
-@media (max-width:768px) { .work { padding:0 24px; } .work-hero { padding-top:96px; } }
+@media (max-width:768px) {
+  .work { padding:0 20px; }
+  .work-hero { padding-top:96px; }
+  .work-grid { grid-template-columns: 1fr; gap:20px; }
+  .work-card { transform: none !important; }
+  .work-card::after { display: none; }
+  .work-title { font-size:22px; white-space:normal; overflow:visible; }
+  .work-short { font-size:14px; }
+  .work-cat { white-space:normal; overflow:visible; }
+  .work-thumb { height:140px; }
+  .work-filters { gap:8px; }
+  .filter-btn { font-size:13px; padding:6px 14px; }
+}

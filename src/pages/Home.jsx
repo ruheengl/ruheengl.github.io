@@ -155,7 +155,12 @@ export default function Home() {
                 style={{ '--cr': `${rotations[i % rotations.length]}deg`, transitionDelay: `${(i % 4) * .06}s` }}
               >
                 <div className="tape" style={{ '--tr': `${i % 2 === 0 ? -2 : 2}deg` }} />
-                <div className="work-thumb" />
+                <div className="work-thumb">
+                  {p.cover
+                    ? <img src={p.cover} alt={p.title} style={{ width:'100%', height:'100%', objectFit:'cover' }} />
+                    : null
+                  }
+                </div>
                 <div className="work-body">
                   <span className="work-cat">{p.category}</span>
                   <h3 className="work-title">{p.title}</h3>
